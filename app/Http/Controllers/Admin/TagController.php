@@ -54,7 +54,7 @@ class TagController extends Controller
 
         $tag = Tag::create($request->all());
 
-        return redirect()->route('admin.tags.edit', compact('tag'))->with('info', 'Etiqueta creada con éxito');
+        return redirect()->route('admin.tags.index', compact('tag'))->with('info', 'Etiqueta creada con éxito');
     }
 
     /**
@@ -118,6 +118,6 @@ class TagController extends Controller
     {
         $tag->delete();
 
-        return redirect()->route('admi.tags.index')->with('info', 'Etiqueta eliminada con éxito');
+        return redirect()->route('admin.tags.index')->with('info', 'Etiqueta eliminada con éxito');
     }
 }

@@ -28,9 +28,9 @@
                     <tr>
                         <td>{{$tag->id}}</td>
                         <td>{{$tag->name}}</td>
-                        <td width="10px">
+                        <!--<td width="10px">
                             <a class="btn btn-primary btn-sm" href="{{route('admin.tags.edit', $tag)}}">Editar</a>
-                        </td>
+                        </td>-->
                         <td width="10px">
                             <form action="{{route('admin.tags.destroy', $tag)}}" method="POST">
                                 @csrf
